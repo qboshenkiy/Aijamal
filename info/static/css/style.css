@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+.wrapper{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+body{
+ background-color: #1d262e;
+}
+header{
+	padding: 20px;
+	background-color: #1A232B99;
+}
+nav{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.nav-logo{
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	border-right: 0.8px solid #7f8c9a;
+	padding-right: 20px;
+}
+.nav-ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	column-gap: 20px;
+}
+.logo-title{
+	text-transform: uppercase;
+	color: white;
+	font-size: 16.65px;
+}
+.nav-li{
+	text-transform: uppercase;
+	transition: 0.3s;
+
+}
+.nav-li:hover{
+	font-size: 17px;
+	transition: 0.3s;
+}
+a{
+	text-decoration: none;
+	color: #7f8c9a;
+}
+a:hover{
+	color: white;
+}
+.box-news{
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+	margin: 50px;
+}
+.img-news{
+	max-width: 400px;
+}
+.title-news{
+	font-size: 40px;
+	padding-top: -70px;
+	margin-bottom: 20px;
+	color: #ff6fb0;
+}
+
+#main-news{
+	background-color: #D1347b12;
+	padding: 20px;
+}
+.box-info{
+	padding-bottom: 20px;
+	border-bottom: #d1357b solid 3px;
+}
+.card-news{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin: 0;
+}
+.card-new{
+    display: block;
+    position: relative;
+	width: 380px;
+	height: 470px;
+
+	border-radius: 10px;
+	background-color: #1b242c;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-img{
+	display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    clip-path: inset(10px 0 50px 0);
+}
+.box-card{
+	display: flex;
+}
+.date-time, .card-text{
+	font-size: 16px;
+	margin: 10px 0 0 30px;
+	color: #7f8c9a;
+}
+.news{
+	margin: 50px;
+}
+.card-title{
+	display: block;
+	width: 350px;
+	max-height: 80px;
+	font-size: 20px;
+	position: absolute;
+	top: 350px;
+	left: 10px;
+}
+footer{
+	background-color: #171822;
+
+}
+.background-fit{
+	filter: brightness(0) invert(1);
+}
+.flex-box{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px;
+}
+.box-footer{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1200px;
+}
+.footer-h5{
+	font-size: 30px;
+	color: #7f8c9a;
+}
+.footer-text{
+	color: #7f8c9a;
+}

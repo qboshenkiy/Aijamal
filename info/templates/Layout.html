@@ -1,0 +1,71 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News kg</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrapper">
+        <nav>
+          <div class="nav-logo">
+            <img
+              src="https://news.kg/wp-content/uploads/2024/03/newsicon.svg"
+              alt=""
+              width="40"
+            />
+            <h2 class="logo-title">News-kg</h2>
+          </div>
+          <ul class="nav-ul">
+            <li class="nav-li"><a href="#">Главная</a></li>
+            <li class="nav-li"><a href="#main-news">Новости</a></li>
+            <li class="nav-li"><a href="#news">Информация</a></li>
+            <li class="nav-li"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="" id="contacts">
+            <div class="box-footer">
+                <h5 class="footer-h5">Наши контакты</h5>
+                <div class="footer-container">
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/2959742_broadcast_google_streaming_video_youtube_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">Новости Кыргызстана</p>
+                    </div>
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/8812121_tik_tok_logo_brand_free_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">@tik_news.kg</p>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/2959748_instagram_photo_share_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">@news__kg</p>
+                    </div>
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/6214709_air_airplane_logo_paper_plane_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">@news_kg</p>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/2674096_object_email_web_essential_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">news.kg@gmail.com</p>
+                    </div>
+                    <div class="flex-box">
+                        <img class="background-fit" src="{% static 'image/9042869_phone_icon.png' %}" alt="" width="25">
+                        <p class="footer-text">+996 700-000-000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
